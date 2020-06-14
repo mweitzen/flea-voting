@@ -1,0 +1,14 @@
+.emailForm {
+  width: 435px;
+  transition: width ease 1s;
+}
+
+@media (max-width: 500px) {
+  .emailForm {
+    width: 100%;
+  }
+}
+
+button {
+  width: 100%;
+}

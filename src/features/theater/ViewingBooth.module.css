@@ -1,0 +1,79 @@
+.playerWrapper {
+  position: relative;
+  padding-top: 56.25%;
+  background-color: #FE0F68;
+  background-image: url('../../assets/img/logo-black.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #A9A9A9	;
+}
+
+.reactPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.infoBox {
+  min-height: 125px;
+}
+
+.thumbnailDiv {
+  display: inline-block;
+  vertical-align: middle;
+  /* margin-top: -120px; */
+}
+
+.videoThumbnail {
+  height: 120px;
+  width: 120px;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid #A9A9A9;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow opacity;
+  transition-property: box-shadow opacity;
+  margin-bottom: 30px;
+}
+
+.videoThumbnail:hover, .videoThumbnail:focus, .videoThumbnail:active {
+  cursor: pointer;
+  box-shadow: 0 0 23px rgb(135,129,189);
+  opacity: 1;
+}
+
+.thumbnailUnderlay {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+  .thumbnailRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+/*
+@media only screen and (max-width: 991px) {
+  .thumbnailUnderlay{
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .thumbnailUnderlay{
+    left: 30px;
+  }
+} */

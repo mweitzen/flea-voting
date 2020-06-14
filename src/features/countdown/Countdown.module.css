@@ -1,0 +1,36 @@
+.countdownNav p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 32px;
+}
+
+.countdownDivNav {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #000000;
+  padding-left: 4px;
+  padding-right: 2px;
+}
+
+.countdownDivNav p {
+  line-height: 0.9em;
+  padding-top: 4px;
+  margin-bottom: 14px;
+  margin-right: 0;
+}
+
+.timeNav {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .countdownNav {
+    display: flex;
+    flex-direction: column;
+  }
+  .countdownNav p {
+    margin-right: 0;
+  }
+}
