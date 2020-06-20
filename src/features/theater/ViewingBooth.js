@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import PropTypes from 'prop-types'
-import axios from 'axios'
 
 import { useSelector, useDispatch, shallowEqual } from 'react-redux'
 
@@ -8,13 +6,12 @@ import styles from './ViewingBooth.module.css';
 
 import {
   Container,
-  Input,
   Col,
   Row,
   Spinner
 } from 'reactstrap'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import ReactPlayer from 'react-player/lazy'
 
@@ -33,8 +30,7 @@ const ViewingBooth = (props) => {
 
   useEffect(() => {
     dispatch(getVideoInfo())
-    console.log(selectedUrl)
-  }, [])
+  }, [dispatch])
 
   // REVIEW: How to handle this appropriately!!
   const videos = [

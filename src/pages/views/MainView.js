@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import {
   Container,
@@ -7,7 +6,6 @@ import {
 
 import MainNavbar from '../../components/MainNavbar'
 import Footer from '../../components/Footer'
-import EmailSubmission from '../../features/marketing/EmailSubmission'
 
 const MainView = ({children, backButton}) => {
   return (

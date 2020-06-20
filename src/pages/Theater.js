@@ -1,8 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 import history from '../app/history'
-import { Link } from 'react-router-dom'
 
 import {
   Container,

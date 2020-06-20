@@ -1,20 +1,16 @@
 import React, { useState } from 'react'
 import { unwrapResult } from '@reduxjs/toolkit'
-import PropTypes from 'prop-types'
 
 import { useDispatch } from 'react-redux';
 
 import {
   Container,
-  Card,
   Button,
   Form,
   FormGroup,
   FormFeedback,
   FormText,
-  Label,
   Input,
-  Select,
   Spinner
 } from 'reactstrap'
 

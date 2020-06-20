@@ -1,22 +1,16 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-
-import { Link } from 'react-router-dom'
-import history from '../app/history'
 
 import {
   Navbar,
   NavbarBrand,
   NavbarText,
   Nav,
-  NavItem,
   NavLink,
-  Button
 } from 'reactstrap'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import logo from '../assets/img/logo.png'
+// import logo from '../assets/img/logo.png'
 import logoBlack from '../assets/img/logo-black.png'
 
 import CountdownNav from '../features/countdown/CountdownNav'
