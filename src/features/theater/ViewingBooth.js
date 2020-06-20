@@ -16,7 +16,7 @@ import {
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import YouTubePlayer from 'react-player/lib/players/YouTube'
+import ReactPlayer from 'react-player/lazy'
 
 import VotingPoll from '../voting/VotingPoll'
 import { getVideoInfo } from './videoSlice'
@@ -33,12 +33,10 @@ const ViewingBooth = (props) => {
 
   useEffect(() => {
     dispatch(getVideoInfo())
-  })
+    console.log(selectedUrl)
+  }, [])
 
-  // REVIEW:
   // REVIEW: How to handle this appropriately!!
-  // REVIEW:
-
   const videos = [
     useSelector(state => state.videos.data[0], shallowEqual),
     useSelector(state => state.videos.data[1], shallowEqual),
@@ -51,7 +49,7 @@ const ViewingBooth = (props) => {
     <Container>
       {/* Video Player */}
       <div className={styles.playerWrapper}>
-        <YouTubePlayer
+        <ReactPlayer
           url={selectedUrl}
           height="100%"
           width="100%"
